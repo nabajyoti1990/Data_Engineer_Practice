@@ -7,8 +7,11 @@ config = configparser.ConfigParser()
 
 config.read(r"C:\Users\nabaj\OneDrive\Desktop\STUDY_Python\DE_Project_Nabajyoti\config_file.ini")
 
+# one step method
 book_price=config["bookcost"]["science"]
 print(book_price)
+
+# Two steo method
 book_price=config["bookcost"]
 print(book_price["science"])
 
